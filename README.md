@@ -1,1 +1,1 @@
-buat database = buat folder databases di folder deathmatch, lalu buat lagi global dan namadb.db
+database = databases/global/namedb.db
