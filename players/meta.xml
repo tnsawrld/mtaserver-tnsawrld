@@ -2,6 +2,7 @@
   <script src="s_function.lua" type="server"/>
   <script src="s_player.lua" type="server"/>
   <script src="s_auth.lua" type="server"/>
+  <script src="s_savedata.lua" type="server"/>
   
   <script src="c_loginmenu.lua" type="client"/>
   <script src="c_registermenu.lua" type="client"/>

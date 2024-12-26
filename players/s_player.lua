@@ -1,7 +1,6 @@
 local db = exports.dbserver:GetConnection()
 
-
-addEventHandler('onPlayerJoin', root, function()
+function CheckPlayerAccount()
     local namePlayer = getPlayerName(source)
     local player = source
 
@@ -16,4 +15,8 @@ addEventHandler('onPlayerJoin', root, function()
             outputDebugString('Nama : ' ..namePlayer.. ' Tidak terdaftar ke dalam database', 3)
         end
     end, db, 'SELECT username FROM player WHERE username = ?', namePlayer)
+end
+
+addEventHandler('onPlayerJoin', root, function()
+    CheckPlayerAccount()
 end)
